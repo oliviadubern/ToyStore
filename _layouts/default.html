@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 <head>
+  <script>
+(function(w, d) {
+  w.PushEngage = w.PushEngage || [];
+  w._peq = w._peq || [];
+  PushEngage.push(['init', {
+      appId: 'a7d431c1-5543-4f13-b11c-8d56d24477a8'
+  }]);
+
+  var e = d.createElement('script');
+
+  e.src = 'https://clientcdn.pushengage.com/sdks/pushengage-web-sdk.js';
+  e.async = true;
+  e.type = 'text/javascript';
+  d.head.appendChild(e);
+})(window, document);
+</script>
   <!-- Start VWO Async SmartCode -->
 <link rel="preconnect" href="https://dev.visualwebsiteoptimizer.com" />
 <script type='text/javascript' id='vwoCode'>
